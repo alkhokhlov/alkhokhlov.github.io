@@ -2,6 +2,5 @@
 
 Structure:
 
-* `/privacy/` — Politique de confidentialité
-* `/terms/` — Conditions d'utilisation
-* `/legal/` — Mentions légales
+- `/privacy/` — Politique de confidentialité
+- `/terms/` — Conditions d'utilisation
