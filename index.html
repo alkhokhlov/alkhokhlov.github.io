@@ -1,8 +1,17 @@
+```html
 <!doctype html>
 <html lang="fr">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Siluette — Informations légales</title><style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index,follow">
+<meta
+  name="description"
+  content="Informations légales, politique de confidentialité, conditions d'utilisation et assistance pour l'application Siluette."
+>
+<title>Siluette — Informations légales</title>
+
+<style>
 :root {
   --bg: #f7f6f2;
   --card: #ffffff;
@@ -11,61 +20,194 @@
   --border: #e5e2da;
   --accent: #20201e;
 }
-* { box-sizing: border-box; }
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-  margin: 0; background: var(--bg); color: var(--text);
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
   font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   line-height: 1.7;
 }
+
 header {
-  border-bottom: 1px solid var(--border); background: rgba(255,255,255,.8);
+  border-bottom: 1px solid var(--border);
+  background: rgba(255,255,255,.8);
 }
+
 .nav {
-  max-width: 900px; margin: auto; padding: 18px 24px;
-  display: flex; justify-content: space-between; align-items: center; gap: 20px;
+  max-width: 900px;
+  margin: auto;
+  padding: 18px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
 }
-.logo { font-size: 22px; font-weight: 700; text-decoration: none; color: var(--text); }
-nav a { color: var(--muted); text-decoration: none; margin-left: 18px; }
-nav a:hover { color: var(--text); }
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--text);
+}
+
+nav a {
+  color: var(--muted);
+  text-decoration: none;
+  margin-left: 18px;
+}
+
+nav a:hover {
+  color: var(--text);
+}
+
 main {
-  max-width: 900px; margin: 0 auto; padding: 64px 24px 90px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 64px 24px 90px;
 }
-h1 { font-size: clamp(34px, 6vw, 52px); line-height: 1.1; margin: 0 0 12px; letter-spacing: -.03em; }
-h2 { margin-top: 42px; font-size: 25px; }
-h3 { margin-top: 28px; font-size: 19px; }
-.lead { color: var(--muted); font-size: 18px; margin-bottom: 42px; }
+
+h1 {
+  font-size: clamp(34px, 6vw, 52px);
+  line-height: 1.1;
+  margin: 0 0 12px;
+  letter-spacing: -.03em;
+}
+
+h2 {
+  margin-top: 42px;
+  font-size: 25px;
+}
+
+.lead {
+  color: var(--muted);
+  font-size: 18px;
+  margin-bottom: 42px;
+}
+
 .card {
-  background: var(--card); border: 1px solid var(--border);
-  border-radius: 18px; padding: 28px; margin: 24px 0;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 28px;
+  margin: 24px 0;
 }
-a { color: inherit; }
+
+.card h2 {
+  margin-top: 0;
+}
+
+.card h2 a {
+  text-decoration: none;
+}
+
+.card h2 a:hover {
+  text-decoration: underline;
+}
+
+.card p {
+  margin-bottom: 0;
+}
+
+a {
+  color: inherit;
+}
+
 footer {
-  border-top: 1px solid var(--border); color: var(--muted);
-  max-width: 900px; margin: auto; padding: 28px 24px 50px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  max-width: 900px;
+  margin: auto;
+  padding: 28px 24px 50px;
   font-size: 14px;
 }
-.small { color: var(--muted); font-size: 14px; }
+
 @media (max-width: 600px) {
-  main { padding-top: 42px; }
-  nav a { margin-left: 10px; font-size: 14px; }
-  .nav { padding: 16px; }
+  main {
+    padding-top: 42px;
+  }
+
+  nav a {
+    margin-left: 10px;
+    font-size: 14px;
+  }
+
+  .nav {
+    padding: 16px;
+  }
 }
 </style>
 </head>
+
 <body>
-<header><div class="nav"><a class="logo" href="./">Siluette</a></div></header>
+
+<header>
+  <div class="nav">
+    <a class="logo" href="./" aria-label="Siluette">Siluette</a>
+  </div>
+</header>
+
 <main>
-  <p class="small">INFORMATIONS LÉGALES</p>
-  <h1>Siluette</h1>
-  <p class="lead">Informations légales et documents applicables à l'application Siluette.</p>
-  <div class="card">
-    <h2><a href="./privacy/">Politique de confidentialité</a></h2>
-    <p>Informations relatives à la collecte, à l'utilisation et à la protection des données personnelles.</p>
-  </div>
-  <div class="card">
-    <h2><a href="./terms/">Conditions d'utilisation</a></h2>
-    <p>Règles applicables à l'utilisation de l'application Siluette.</p>
-  </div>
+
+<p class="small">INFORMATIONS LÉGALES</p>
+
+<h1>Siluette</h1>
+
+<p class="lead">
+  Informations légales et documents applicables à l'application Siluette.
+</p>
+
+<div class="card">
+  <h2>
+    <a href="./privacy/">
+      Politique de confidentialité
+    </a>
+  </h2>
+
+  <p>
+    Informations relatives à la collecte, à l'utilisation et à la protection
+    des données personnelles.
+  </p>
+</div>
+
+<div class="card">
+  <h2>
+    <a href="./terms/">
+      Conditions d'utilisation
+    </a>
+  </h2>
+
+  <p>
+    Règles applicables à l'utilisation de l'application Siluette.
+  </p>
+</div>
+
+<div class="card">
+  <h2>
+    <a href="./support/">
+      Assistance
+    </a>
+  </h2>
+
+  <p>
+    Obtenez de l'aide concernant l'application, signalez un problème
+    ou contactez-nous pour toute question.
+  </p>
+</div>
+
 </main>
-<footer>Siluette · <a href="mailto:alkhokhlovv@gmail.com">alkhokhlovv@gmail.com</a></footer>
-</body></html>
+
+<footer>
+  Siluette ·
+  <a href="mailto:alkhokhlovv@gmail.com">
+    alkhokhlovv@gmail.com
+  </a>
+</footer>
+
+</body>
+</html>
+```
